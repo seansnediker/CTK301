@@ -1,0 +1,109 @@
+h1 {
+color: #ff8400;
+background-color: #ffffff;
+font-style: italic;
+font-weight: normal;
+}
+
+h2 {
+  color: #ff8400;
+  background-color: #ffffff;
+  font-style: italic;
+  font-weight: normal;
+}
+
+h3 {
+  color: #ff8400;
+  background-color: #ffffff;
+  font-style: italic;
+  font-weight: normal;
+}
+
+h4 {
+  color: #ff8400;
+  background-color: #ffffff;
+  font-style: italic;
+  font-weight: normal;
+}
+
+h5 {
+  color: #ff8400;
+  background-color: #ffffff;
+  font-style: italic;
+  font-weight: normal;
+}
+a {
+  color: #000000;
+}
+
+a:link {
+  color: #ff0000;
+}
+
+a:visited {
+  color: #00ff00;
+}
+
+a:active {
+  color: #363f9c;
+}
+
+a:hover {
+  color:  #fff033;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+#dave {
+ color: #0900fb;
+ background-color: #ffffff;
+}
+
+.dave2 {
+  color: #0900fb;
+  background-color: #FFFFFF;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #ff0000;
+}
+
+#divnormal {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.spanugly {
+  color: #8a9111;
+
+}
+
+.customtext {
+  font-family: sans-serif;;
+
+}
+
+.textcenter {
+text-align: center;
+}
+
+.textjustify {
+text-align: justify;
+}
+
+.imgbox {
+border: 20px solid #000000;
+padding: 10px 10px 10px 10px;
+background-color: #FFFFFF;
+}
+
+body {
+  background-image: url(images/pootis.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
