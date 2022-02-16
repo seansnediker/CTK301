@@ -132,3 +132,7 @@ nav li a:hover {
 main p {
   text-align: justify;
 }
+
+main a {
+  color: #0000ff;
+  text-decoration: underline;
