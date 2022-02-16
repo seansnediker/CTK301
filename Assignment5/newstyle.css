@@ -115,14 +115,15 @@ nav li {
   margin: 10px;
   width: 140px;
   background-color: #0e068a;
-  text-decoration: none;
+
 }
 
 nav li a {
   color: #ffffff;
   padding: 10px;
   border: 0px solid #ffffff;
-  /* display: block;*/
+  text-decoration: none;
+  display: block;
 }
 
 nav li a:hover {
@@ -135,4 +136,11 @@ main p {
 
 main a {
   color: #0000ff;
+  text-decoration: none;
+}
+
+main a:hover {
+  color: #ff0000;
   text-decoration: underline;
+}
+
