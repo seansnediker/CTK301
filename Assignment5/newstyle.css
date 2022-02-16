@@ -1,0 +1,155 @@
+h1 {
+color: #000000;
+background-color: #ffffff;
+font-style: normal;
+font-weight: normal;
+font-family: helvetica;
+}
+
+h2 {
+  color: #000000;
+  background-color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-family: helvetica;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 15px;
+}
+
+h3 {
+  color: #ff8400;
+  background-color: #ffffff;
+  font-style: italic;
+  font-weight: normal;
+}
+
+h4 {
+  color: #ff8400;
+  background-color: #ffffff;
+  font-style: italic;
+  font-weight: normal;
+}
+
+h5 {
+  color: #ff8400;
+  background-color: #ffffff;
+  font-style: italic;
+  font-weight: normal;
+}
+a {
+  color: #000000;
+}
+
+a:link {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #0000ff;
+}
+
+a:active {
+  color: #363f9c;
+}
+
+a:hover {
+  color:  #ff0000;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+#dave {
+ color: #0900fb;
+ background-color: #ffffff;
+}
+
+.dave2 {
+  color: #0900fb;
+  background-color: #FFFFFF;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #0e068a;
+  font-family: Verdana;
+  font-weight: bold;
+  font-style: italic;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-color: #ffffff;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+#divnormal {
+  border-top: 30px solid #ffffff;
+  border-bottom: 30px solid #ffffff;
+  border-left: 20px solid #ffffff;
+  border-right: 20px solid #ffffff;
+  background-color: #ffffff
+}
+
+.spanugly {
+  color: #8a9111;
+}
+
+.helvetica {
+  font-family: Helvetica;
+}
+
+.helveticabold {
+  font-family: helveticabold;
+}
+
+body {
+  background-image: url(a5bg.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.box {
+border: 25px solid #ffffff;
+background-color: #FFFFFF;
+}
+
+.box2 {
+border-top: 10px solid #ffffff;
+border-bottom: 10px solid #ffffff;
+border-left: 10px solid #ffffff;
+border-right: 10px solid #ffffff;
+}
+
+.textjustify {
+text-align: justify;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  width: 140px;
+  background-color: #0e068a;
+  text-decoration: none;
+}
+
+nav li a {
+  color: #ffffff;
+  padding: 10px;
+  border: 0px solid #ffffff;
+  /* display: block;*/
+}
+
+nav li a:hover {
+  background-color: #2344e8;
+}
