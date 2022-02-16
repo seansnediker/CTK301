@@ -36,31 +36,6 @@ h5 {
   font-style: italic;
   font-weight: normal;
 }
-a {
-  color: #000000;
-}
-
-a:link {
-  color: #0000ff;
-  font-weight: bold;
-}
-
-a:visited {
-  color: #0000ff;
-}
-
-a:active {
-  color: #363f9c;
-}
-
-a:hover {
-  color:  #ff0000;
-  text-decoration: underline;
-}
-
-a {
-  text-decoration: none;
-}
 
 #dave {
  color: #0900fb;
@@ -152,4 +127,8 @@ nav li a {
 
 nav li a:hover {
   background-color: #2344e8;
+}
+
+main p {
+  text-align: justify;
 }
