@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  s
+  font-family: 'PT Sans', sans-serif;
 }
 
 #wrapper {
@@ -16,10 +16,11 @@ header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 24px;
+  border-radius: 10px;
 }
 
 #Video {
-  position: relative;
+  position: absolute;
   width: 1200px;
   margin: 0px;
   padding: 0px;
@@ -50,8 +51,15 @@ nav li a {
   text-decoration: none;
   display: block;
   font-weight: bold;
-  font-family: sans-serif;
   margin: 0px;
+  transition: background-color 1.0s, width 2.0s, color 2.0s;
+  font-family: 'Mukta', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+}
+
+nav li a:hover {
+  background-color: #grey;
+  color: black;
 }
 
 main {
@@ -70,4 +78,28 @@ footer {
   padding-left: 24px;
   font-size: 24px;
   font-weight: bold;
+}
+
+.roundedbox {
+  padding: 2px;
+  width: 1192px;
+  border: 2px solid #999;
+  border-radius: 10px;
+}
+
+.dropshadowbox {
+  padding: 10px;
+  margin: 20px;
+  width: 230px;
+  border: 1px solid #999;
+  background-color: #ccc;
+  box-shadow: 0px 10px 10px #666; /* x, y, blur, color */
+}
+
+.textshadowbox {
+  margin: 20px;
+  font-weight: bold;
+  font-size: 36px;
+  color: #white;
+  text-shadow: 2px 2px 2px #000; /* x, y, blur, color */
 }
