@@ -6,9 +6,9 @@ body {
 h1 {
   font-family: 'PT Sans', sans-serif;
   position: absolute;
-  top: 50%;
+  top: 40%;
   color: white;
-  right: 50%;
+  right: 40%;
   background-color: grey;
 }
 
@@ -87,6 +87,13 @@ footer {
 .roundedbox {
   padding: 2px;
   width: 1192px;
+  border: 2px solid #999;
+  border-radius: 10px;
+}
+
+.roundedbox2 {
+  padding: 2px;
+  width: 100%px;
   border: 2px solid #999;
   border-radius: 10px;
 }
