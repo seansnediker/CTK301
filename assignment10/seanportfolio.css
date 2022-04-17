@@ -25,7 +25,7 @@ body {
 
 .content {
 	width: 100%;
-	height: calc(100% - 75px);
+	height: 1200px;
 	background-image: url;
 	background-size: cover;
 	display: flex;
@@ -55,24 +55,20 @@ h1 {
   border-radius: 10px;
 }
 
-#Video {
-  position: absolute;
-  width: 1200px;
-  margin: 0px;
-  padding: 0px;
-}
-
 svg.line-top {
 	width: 100%;
 	background-color: #17141d;
 }
+
 svg.line-bottom {
 	width: 100%;
 }
+
 .menu {
 	width: 750px;
 	margin: 0 auto;
 }
+
 ul {
 	padding: 0;
 	margin: 0;
