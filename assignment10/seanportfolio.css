@@ -48,7 +48,7 @@ h1 {
   width: 1200px;
   border: 1px solid grey;
   padding: 0px;
-  background-color: #ffffff;
+  background-color: #17141d;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 24px;
@@ -120,7 +120,7 @@ main {
 
 footer {
   grid-column: span 12;
-  background-color: #154865;
+  background-color: #17141d;
   color: white;
   text-transform: uppercase;
   padding-left: 24px;
