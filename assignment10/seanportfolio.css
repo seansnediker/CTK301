@@ -3,8 +3,13 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-header {
+h1 {
   font-family: 'PT Sans', sans-serif;
+  position: absolute;
+  top: 50%;
+  color: white;
+  right: 50%;
+  background-color: grey;
 }
 
 #wrapper {
@@ -29,6 +34,8 @@ header {
 nav {
 grid-column: span 12;
 padding: 0px;
+position: absolute;
+bottom: 5%;
 }
 
 nav ul {
@@ -64,10 +71,7 @@ nav li a:hover {
 
 main {
   grid-column: span 12;
-  display: grid;
-  grid-template-columns: 12, 1fr;
-  grid-column-gap: 24px;
-  background-clip:
+  position: relative;
 }
 
 footer {
