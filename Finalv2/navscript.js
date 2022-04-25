@@ -1,76 +1,83 @@
-const lis = document.querySelectorAll("li");
-const lbs = document.querySelectorAll(".lb");
-const ul = document.querySelector("ul");
+const lis = document.querySelectorAll(".header .menu ul li");
+const lbs = document.querySelectorAll("svg polygon.lb");
+const ul = document.querySelector(".header .menu ul");
 const lineDash = document.querySelector(".line-dash");
 
+const activeOnLoad = document.querySelector("li.active");
+const indexOnLoad = Array.prototype.indexOf.call(lis, activeOnLoad);
 
-var dashOrigin = -35; //pixels
-var selectedLi = -35; //pixels
+var dashOrigin = tabIndexToOffset(indexOnLoad); //pixels
+var selectedLi = tabIndexToOffset(indexOnLoad); //pixels
 var speed = 500; //move this many pixels in one second.
-var distance = 0;
+var distance = Math.abs(tabIndexToOffset(indexOnLoad));
 var time = 0;
 
-// initial animation and class for HOME
-TweenLite.to(lbs[0], 0.6, {
-					y: -43,
-					ease: Bounce.easeOut,
-					delay: 1
-				});
+// set initial hover indicator bar to the active nav element
+TweenLite.to(lineDash, 0, {strokeDashoffset: tabIndexToOffset(indexOnLoad)})
 
-lis[0].classList.add("active");
+// initial animation and class for HOME
+TweenLite.to(lbs[indexOnLoad], 0.6, {
+                    y: -43,
+                    ease: Bounce.easeOut,
+                    delay: 1
+                });
 
 //push all the bottom lines down.
 function pushDownLb() {
-	for(let k = 0; k < lbs.length; ++k)
-		TweenLite.to(lbs[k], 0.5, {
-					y: 0,
-					ease:  Power3.easeOut
-				});
+    for(let k = 0; k < lbs.length; ++k)
+        TweenLite.to(lbs[k], 0.5, {
+                    y: 0,
+                    ease:  Power3.easeOut
+                });
+}
+
+function tabIndexToOffset(index) {
+    return (-250 * index) - 35;
 }
 
 ul.addEventListener(
-	"mouseleave",
-	function(e) {
-		// to avoid a bug in chrome that sometimes triggers mouseleave on click
-		// and the relatedTarget comes up null
-		if (e.relatedTarget) {
-			distance = Math.abs(dashOrigin - selectedLi);
-			time = distance / speed;
-			dashOrigin = selectedLi;
-			if (time) {
-				// overlaping tweens would give a zero time
-				TweenLite.to(lineDash, time, {
-					strokeDashoffset: selectedLi,
-					ease: Bounce.easeOut
-				});
-			} //if
-		} //if
-	},
-	false
+    "mouseleave",
+    function(e) {
+        // to avoid a bug in chrome that sometimes triggers mouseleave on click
+        // and the relatedTarget comes up null
+        if (e.relatedTarget) {
+            distance = Math.abs(dashOrigin - selectedLi);
+            time = distance / speed;
+            dashOrigin = selectedLi;
+            if (time) {
+                // overlaping tweens would give a zero time
+                TweenLite.to(lineDash, time, {
+                    strokeDashoffset: selectedLi,
+                    ease: Bounce.easeOut
+                });
+            } //if
+        } //if
+    },
+    false
 );
 
 for (let i = 0; i < 4; ++i) {
-	lis[i].addEventListener("mouseover", function() {
-		distance = Math.abs(-250 * i - 35 - dashOrigin);
-		time = distance / speed;
-		dashOrigin = -250 * i - 35;
-		if (time) {
-			TweenLite.to(lineDash, time, {
-				strokeDashoffset: -250 * i - 35,
-				ease: Bounce.easeOut
-			});
-		} //if
-	});
+    lis[i].addEventListener("mouseover", function() {
+        distance = Math.abs(tabIndexToOffset(i) - dashOrigin);
+        time = distance / speed;
+        dashOrigin = tabIndexToOffset(i);
+        if (time) {
+            TweenLite.to(lineDash, time, {
+                strokeDashoffset: tabIndexToOffset(i),
+                ease: Bounce.easeOut
+            });
+        } //if
+    });
 
-	lis[i].addEventListener("click", function() {
-		selectedLi = -250 * i - 35;
-		pushDownLb();
-		let current = document.getElementsByClassName("active");
-		current[0].classList.remove("active");
-		lis[i].classList.add("active");
-		TweenLite.to(lbs[i], 0.5, {
-					y: -43,
-					ease: Bounce.easeOut
-				});
-	});
+    lis[i].addEventListener("click", function() {
+        selectedLi = tabIndexToOffset(i);
+        pushDownLb();
+        let current = document.getElementsByClassName("active");
+        current[0].classList.remove("active");
+        lis[i].classList.add("active");
+        TweenLite.to(lbs[i], 0.5, {
+                    y: -43,
+                    ease: Bounce.easeOut
+                });
+    });
 }
