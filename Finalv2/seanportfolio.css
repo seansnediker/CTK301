@@ -62,13 +62,14 @@ body {
   margin-bottom: 24px;
   padding: 0px;
   border: 3.5px solid #203796;
-	width: 40%;
+	width: 30%;
 	height: 40%;
 }
 
 .sexybox {
 	margin-left: 40px;
 	margin-right: 40px;
+	margin-bottom: 40px;
 	padding-bottom: 40px;
 	text-align: center;
 	border: 1px solid #a103fc;
