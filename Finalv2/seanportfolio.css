@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=PT+Sans:wght@700&family=Roboto+Condensed:wght@700&display=swap');
 
 html {
 	height: 100%;
@@ -17,7 +18,7 @@ body {
 }
 
 .header !important {
-	width: 100%;
+	width: 1200px;
 	height: 75px;
 	background: #17141d;
 	opacity: 0.95;
@@ -30,7 +31,7 @@ body {
 }
 
 .content {
-	width: 1200px;
+	width: 1198px;
 	height: 1200px;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
@@ -50,6 +51,7 @@ body {
 	margin-left: 40px;
 	margin-right: 40px;
 	text-align: center;
+
 	border: 1px solid #a103fc;
 	padding: 5px;
 	border-radius: 5px;
@@ -80,11 +82,12 @@ body {
 
 header {
   grid-column: span 12;
-  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
 	color: white;
 	align-items: center;
 	justify-content: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
 }
 
 nav {
@@ -155,6 +158,8 @@ ul li  {
 	display: inline-block;
 	letter-spacing: 3.5px;
 	transition: all 0.5s ease-out;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
 }
 
 li.active {
@@ -163,7 +168,7 @@ li.active {
 }
 
 a:visited {
-	color: blue;
+	color: orange;
 }
 
 polygon {
@@ -197,7 +202,7 @@ footer {
   text-transform: uppercase;
   padding-left: 24px;
   font-size: 24px;
-  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .carousel {
@@ -230,6 +235,7 @@ footer {
   width: 1195px;
   border: 2px solid #999;
   border-radius: 10px;
+	color: black;
 }
 
 .roundedbox2 {
@@ -237,6 +243,7 @@ footer {
   width: 100%;
   border: 1px solid #999;
   border-radius: 10px;
+	color: black;
 }
 
 .dropshadowbox {
